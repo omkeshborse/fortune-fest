@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.game-area {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ball {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.goal-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    color: white;
+    visibility: hidden;
+}
+
+.timer {
+    font-size: 4rem;
+    color: #fff;
+    text-align: left;
+}
+
+
+.block-left {
+    position: absolute;
+    width: 20px;
+    height: 150px;
+    background-color: #fff;
+    bottom: 200px;
+}
+
+.block-right {
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    background-color: #fff;
+    bottom: 20px;
+}
+
+.block-left {
+    left: 20px;
+}
+
+.block-right {
+    right: 20px;
+    /* height: 100px; */
+}
+
+.left-count,
+.right-count {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.left-count {
+    top: 5%;
+}
+
+.right-count {
+    top: 15%;
+}
